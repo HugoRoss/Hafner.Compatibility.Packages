@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35209.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.NullableReferenceTypeAttributes.G1", "Hafner.Compatibility.NullableReferenceTypeAttributes.G1\Hafner.Compatibility.NullableReferenceTypeAttributes.G1.csproj", "{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63EF12D0-F135-4B40-90CC-895577418309}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.ConstantExpectedAttribute", "Hafner.Compatibility.ConstantExpectedAttribute\Hafner.Compatibility.ConstantExpectedAttribute.csproj", "{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.NullableReferenceTypeAttributes.G2", "Hafner.Compatibility.NullableReferenceTypeAttributes.G2\Hafner.Compatibility.NullableReferenceTypeAttributes.G2.csproj", "{E5637283-2B36-4380-BDD9-9CA7603774D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.NullableReferenceTypeAttributes.G3", "Hafner.Compatibility.NullableReferenceTypeAttributes.G3\Hafner.Compatibility.NullableReferenceTypeAttributes.G3.csproj", "{50D937CA-2609-4C6D-8036-E310CE026481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NuGet|Any CPU = NuGet|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2B9DFD-26C5-4DF2-956D-2FC5ACC80F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D9BE03-E1CA-47AF-B9DB-1BBDEA01C63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5637283-2B36-4380-BDD9-9CA7603774D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D937CA-2609-4C6D-8036-E310CE026481}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31E26369-0199-4CAA-AFC5-BA9638791B1D}
+	EndGlobalSection
+EndGlobal

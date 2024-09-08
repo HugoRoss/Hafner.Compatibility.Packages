@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!--<TargetFrameworks>net20;net30;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0;net6.0;net7.0;net8.0;net9.0;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;</TargetFrameworks>-->
+    <TargetFrameworks>net20;net30;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;</TargetFrameworks>
+    <Configurations>Debug;Release;NuGet</Configurations>
+    <ConfigurationsThatPublish>|NuGet|</ConfigurationsThatPublish>
+    <OutputType>Library</OutputType>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <NoWarn>IDE0079;IDE0130;NETSDK1138;CA1720;CS1701;CS1591;NU1901;NU1902;NU1903;NU1904</NoWarn>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <CheckNotRecommendedTargetFramework>false</CheckNotRecommendedTargetFramework>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Christoph Hafner</Authors>
+    <Company>Hafner</Company>
+    <Product>Hafner.Compatibility</Product>
+    <!-- Set <major>.<minor>.<patch> for the package version according to the following logic: -->
+    <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
+    <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
+    <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
+    <Version>1.0.0.0</Version>
+    <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
+    <AssemblyInformationalVersion>1.0.0.0</AssemblyInformationalVersion>
+    <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
+    <FileVersion>1.0.0.0</FileVersion>
+    <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
+    <Description>
+      Defines the second generation of nullable reference type attributes of namespace "System.Diagnostics.CodeAnalysis" for frameworks that do not include them.
+    </Description>
+    <PackageIcon>resources\PackageIcon.png</PackageIcon>
+    <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
+    <PackageTags>nullable reference type attributes AllowNull DisallowNull DoesNotReturn DoesNotReturnIf MaybeNull MaybeNullWhen NotNull NotNullIfNotNull NotNullWhen System.Diagnostics.CodeAnalysis System.Diagnostics.CodeAnalysis.AllowNullAttribute System.Diagnostics.CodeAnalysis.DisallowNullAttribute System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute System.Diagnostics.CodeAnalysis.MaybeNullAttribute System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute System.Diagnostics.CodeAnalysis.NotNullAttribute System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute System.Diagnostics.CodeAnalysis.NotNullWhenAttribute</PackageTags>
+    <PackageReleaseNotes>Initial release as own package.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.NullableReferenceTypeAttributes.G1</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.NullableReferenceTypeAttributes.G1</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="$(ConfigurationsThatPublish.Contains('|$(Configuration)|'))">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Resources\PackageReadMe.md" Pack="true" PackagePath="\resources" Visible="true" />
+    <None Include="..\..\BuildTools\Resources\PackageIcon.png" Pack="true" PackagePath="\resources" Visible="false" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PreBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(TargetFramework)&quot;&#xD;&#xA;" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PostBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(TargetFramework)&quot;&#xD;&#xA;" />
+  </Target>
+  <Target Name="PostPackaging" AfterTargets="Pack" Condition="'$(Configuration)' == 'NuGet'">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PostPackage.bat&quot; &quot;NuGet&quot;&#xD;&#xA;" />
+  </Target>
+</Project>
