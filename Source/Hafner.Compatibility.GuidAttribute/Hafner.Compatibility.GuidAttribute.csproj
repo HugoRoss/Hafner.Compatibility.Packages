@@ -1,7 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!--<TargetFrameworks>net20;net30;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0;net6.0;net7.0;net8.0;net9.0;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;</TargetFrameworks>-->
-    <TargetFrameworks>net20;net30;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0;net6.0;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;</TargetFrameworks>
+    <TargetFrameworks>netstandard1.0</TargetFrameworks>
     <Configurations>Debug;Release;NuGet</Configurations>
     <ConfigurationsThatPublish>|NuGet|</ConfigurationsThatPublish>
     <OutputType>Library</OutputType>
@@ -11,7 +10,7 @@
     <Nullable>enable</Nullable>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
-    <NoWarn>IDE0079;IDE0130;NETSDK1138;CA1720;CS1701;CS1591;NU1901;NU1902;NU1903;NU1904</NoWarn>
+    <NoWarn>IDE0079;NETSDK1138;CA1720;CS1701;NU1901;NU1902;NU1903;NU1904</NoWarn>
     <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
     <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <CheckNotRecommendedTargetFramework>false</CheckNotRecommendedTargetFramework>
@@ -22,34 +21,31 @@
     <Company>Hafner</Company>
     <Product>Hafner.Compatibility</Product>
     <!-- Set <major>.<minor>.<patch> for the package version according to the following logic: -->
-    <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
-    <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
-    <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>1.0.2.0</Version>
+    <!--    1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
+    <!--    1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
+    <!--    1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
+    <Version>2.0.4.0</Version>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>2.0.4.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyInformationalVersion>1.0.2.0</AssemblyInformationalVersion>
+    <FileVersion>2.0.4.0</FileVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <FileVersion>1.0.2.0</FileVersion>
-    <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
-    <Description>
-      Defines the "System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute".
-    </Description>
+    <AssemblyInformationalVersion>2.0.4.0</AssemblyInformationalVersion>
+    <Copyright>Copyright (C) 2021 - 2024 by Christoph Hafner</Copyright>
+    <Description>Defines the System.Runtime.InteropServices.GuidAttribute for frameworks that do not include it, namely .NET Standard 1.0.</Description>
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
-    <PackageTags>ConstantExpectedAttribute ConstantExpected System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute Hafner.Compatibility.ConstantExpectedAttribute</PackageTags>
+    <PackageTags>GuidAttribute System.Runtime.InteropServices.GuidAttribute Hafner.Compatibility.GuidAttribute Guid Attribute</PackageTags>
     <PackageReleaseNotes>PackageReadMe.md adjusted.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
   </PropertyGroup>
   <PropertyGroup Condition="$(ConfigurationsThatPublish.Contains('|$(Configuration)|'))">
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Resources\PackageReadMe.md" Pack="true" PackagePath="\resources" Visible="true" />

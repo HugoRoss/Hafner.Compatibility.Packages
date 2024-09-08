@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.Nullab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.NullableReferenceTypeAttributes.G3", "Hafner.Compatibility.NullableReferenceTypeAttributes.G3\Hafner.Compatibility.NullableReferenceTypeAttributes.G3.csproj", "{50D937CA-2609-4C6D-8036-E310CE026481}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.GuidAttribute", "Hafner.Compatibility.GuidAttribute\Hafner.Compatibility.GuidAttribute.csproj", "{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hafner.Compatibility.ExtensionAttribute", "Hafner.Compatibility.ExtensionAttribute\Hafner.Compatibility.ExtensionAttribute.csproj", "{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,18 @@ Global
 		{50D937CA-2609-4C6D-8036-E310CE026481}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
 		{50D937CA-2609-4C6D-8036-E310CE026481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50D937CA-2609-4C6D-8036-E310CE026481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4DB342-4D4E-475A-9987-F4A7543D8CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEB37CE-95CD-4F00-801A-0B696EF83A3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

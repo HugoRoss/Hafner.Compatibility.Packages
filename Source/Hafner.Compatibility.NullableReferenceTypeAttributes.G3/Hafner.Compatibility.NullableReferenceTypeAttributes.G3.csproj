@@ -25,13 +25,13 @@
     <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
     <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
     <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>1.0.0.0</Version>
+    <Version>1.0.2.0</Version>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyInformationalVersion>1.0.0.0</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>1.0.2.0</AssemblyInformationalVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <FileVersion>1.0.0.0</FileVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
     <Description>
       Defines the third generation of nullable reference type attributes of namespace "System.Diagnostics.CodeAnalysis" for frameworks that do not include them.
@@ -39,9 +39,9 @@
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
     <PackageTags>nullable reference type attributes AllowNull DisallowNull DoesNotReturn DoesNotReturnIf MaybeNull MaybeNullWhen NotNull NotNullIfNotNull NotNullWhen System.Diagnostics.CodeAnalysis System.Diagnostics.CodeAnalysis.AllowNullAttribute System.Diagnostics.CodeAnalysis.DisallowNullAttribute System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute System.Diagnostics.CodeAnalysis.MaybeNullAttribute System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute System.Diagnostics.CodeAnalysis.NotNullAttribute System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute System.Diagnostics.CodeAnalysis.NotNullWhenAttribute</PackageTags>
-    <PackageReleaseNotes>Initial release as own package.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.NullableReferenceTypeAttributes.G1</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.NullableReferenceTypeAttributes.G1</RepositoryUrl>
+    <PackageReleaseNotes>PackageReadMe.md adjusted.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
   </PropertyGroup>
