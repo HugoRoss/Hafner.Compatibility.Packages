@@ -1,0 +1,23 @@
+# Hafner.Compatibility.FuncAction.G2
+
+<span style="background-color:yellow;color:red">It is recommended to reference `'Hafner.Compatibility.MetaPackage'` instead of referencing this packages directly.</span>
+
+This package provides the following generic delegates of the second generation:
+
+<span style="white-space:nowrap;">
+
+| Delegates                                                                                     | .Net&nbsp;2.0 | 3.0 | 3.5 | 4.0 | 4.0.3 | 4.5 | 4.5.1 | 4.5.2 | 4.6 | 4.6.1 | 4.6.2 | 4.7 | 4.7.1 | 4.7.2 | 4.8 | 4.8.1 | .NETCore&nbsp;1.0 | 1.1 | 2.0 | 2.1 | 2.2 | 3.0 | 3.1 | .Net&nbsp;5.0 | 6.0 | 7.0 | 8.0 | 9.0 | .NET&nbsp;Standard&nbsp;1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 | 2.1 |
+|:----------------------------------------------------------------------------------------------|:-------------:|:---:|:---:|:---:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----------------:|:---:|:---:|:---:|:---:|:---:|:---:|:-------------:|:---:|:---:|:---:|:---:|:---------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `System.Action`                                                                               |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Action<T1, T2>`                                                                       |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Action<T1, T2, T3>`                                                                   |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Action<T1, T2, T3, T4>`                                                               |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Func<TResult>`                                                                        |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Func<T1, TResult>`                                                                    |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Func<T1, T2, TResult>`                                                                |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Func<T1, T2, T3, TResult>`                                                            |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+| `System.Func<T1, T2, T3, T4, TResult>`                                                        |       X       |  X  |     |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
+
+</span>
+
+Hint: `System.Action<T1>` is generation 1 and already available since `.NET 2.0`.

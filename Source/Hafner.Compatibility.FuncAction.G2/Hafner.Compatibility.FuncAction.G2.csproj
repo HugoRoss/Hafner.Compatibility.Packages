@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!--<TargetFrameworks>net20;net30;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0;net6.0;net7.0;net8.0;net9.0;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;</TargetFrameworks>-->
+    <TargetFrameworks>net20;net30</TargetFrameworks>
+    <Configurations>Debug;Release;NuGet</Configurations>
+    <ConfigurationsThatPublish>|NuGet|</ConfigurationsThatPublish>
+    <OutputType>Library</OutputType>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <NoWarn>IDE0079;IDE0130;NETSDK1138;CA1720;CS1701;CS1591;NU1901;NU1902;NU1903;NU1904</NoWarn>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <CheckNotRecommendedTargetFramework>false</CheckNotRecommendedTargetFramework>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Christoph Hafner</Authors>
+    <Company>Hafner</Company>
+    <Product>Hafner.Compatibility</Product>
+    <Version>1.0.1.0</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.0.1.0</AssemblyInformationalVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
+    <Description>
+      Defines the second generation of System.Func&lt;T&gt; (with 0 to 4 input typeparameters) and System.Action&lt;T&gt; (with 0 and 2 to 4 input typeparameters) for frameworks that do not include them, namely .NET 2.0 and .NET 3.0.
+    </Description>
+    <PackageIcon>resources\PackageIcon.png</PackageIcon>
+    <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
+    <PackageTags>Hafner.Compatibility.FuncAction Hafner.Compatibility.FuncAction.G2 System.Action System.Action&lt;T1, T2&gt; System.Action&lt;T1, T2 ,T3&gt; System.Action&lt;T1, T2, T3, T4&gt; System.Func System.Func&lt;TResult&gt; System.Func&lt;T1, TResult&gt; System.Func&lt;T1, T2, TResult&gt; System.Func&lt;T1, T2, T3, TResult&gt; System.Func&lt;T1, T2, T3, T4, TResult&gt;</PackageTags>
+    <PackageReleaseNotes>PackageReadMe.md adjusted.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="$(ConfigurationsThatPublish.Contains('|$(Configuration)|'))">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Resources\PackageReadMe.md" Pack="true" PackagePath="\resources" Visible="true" />
+    <None Include="..\..\BuildTools\Resources\PackageIcon.png" Pack="true" PackagePath="\resources" Visible="false" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PreBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(TargetFramework)&quot;&#xD;&#xA;" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PostBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(TargetFramework)&quot;&#xD;&#xA;" />
+  </Target>
+  <Target Name="PostPackaging" AfterTargets="Pack" Condition="'$(Configuration)' == 'NuGet'">
+    <Exec Command="@ECHO OFF&#xD;&#xA;CALL &quot;$(ProjectDir)BuildEvents\PostPackage.bat&quot; &quot;NuGet&quot;&#xD;&#xA;" />
+  </Target>
+</Project>
