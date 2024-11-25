@@ -26,13 +26,13 @@
     <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
     <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
     <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1.0</Version>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyInformationalVersion>1.0.0.0</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>1.0.1.0</AssemblyInformationalVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <FileVersion>1.0.0.0</FileVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <Copyright>Copyright (C) 2024 by Christoph Hafner</Copyright>
     <Description>
       Defines the attributes "DynamicallyAccessedMembersAttribute" and "DynamicDependencyAttribute" of namespace "System.Diagnostics.CodeAnalysis" as well as enum "DynamicallyAccessedMemberTypes".
@@ -40,13 +40,13 @@
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
     <PackageTags>DynamicDependency DynamicDependencyAttribute System.Diagnostics.CodeAnalysis.DynamicDependency System.Diagnostics.CodeAnalysis.DynamicDependencyAttribute DynamicallyAccessedMembers DynamicallyAccessedMembersAttribute System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute Hafner.Compatibility Hafner.Compatibility.DynamicallyAccessedMembersAttribute DynamicallyAccessedMemberTypes System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes</PackageTags>
-    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug in package generation fixed.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
   </PropertyGroup>
-  <PropertyGroup Condition="$(LacksGuidAttribute.Contains('|$(Configuration)|'))">
+  <PropertyGroup Condition="$(ConfigurationsThatPublish.Contains('|$(Configuration)|'))">
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
