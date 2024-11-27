@@ -18,13 +18,13 @@
     <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Authors>Christoph Hafner</Authors>
+    <Authors>Christoph&#160;Hafner</Authors>
     <Company>Hafner</Company>
     <Product>Hafner.Compatibility</Product>
-    <Version>1.0.1.0</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <AssemblyInformationalVersion>1.0.1.0</AssemblyInformationalVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.2.0</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.0.2.0</AssemblyInformationalVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
     <Description>
       Defines the second generation of System.Func&lt;T&gt; (with 0 to 4 input typeparameters) and System.Action&lt;T&gt; (with 0 and 2 to 4 input typeparameters) for frameworks that do not include them, namely .NET 2.0 and .NET 3.0.
@@ -32,7 +32,7 @@
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
     <PackageTags>Hafner.Compatibility.FuncAction Hafner.Compatibility.FuncAction.G2 System.Action System.Action&lt;T1, T2&gt; System.Action&lt;T1, T2 ,T3&gt; System.Action&lt;T1, T2, T3, T4&gt; System.Func System.Func&lt;TResult&gt; System.Func&lt;T1, TResult&gt; System.Func&lt;T1, T2, TResult&gt; System.Func&lt;T1, T2, T3, TResult&gt; System.Func&lt;T1, T2, T3, T4, TResult&gt;</PackageTags>
-    <PackageReleaseNotes>PackageReadMe.md adjusted.</PackageReleaseNotes>
+    <PackageReleaseNotes>Source files changed to file-scoped namespaces, PackageReadMe.md improved.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

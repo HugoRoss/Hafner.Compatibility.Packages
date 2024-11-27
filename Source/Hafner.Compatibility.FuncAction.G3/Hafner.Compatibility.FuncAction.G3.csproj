@@ -18,13 +18,13 @@
     <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Authors>Christoph Hafner</Authors>
+    <Authors>Christoph&#160;Hafner</Authors>
     <Company>Hafner</Company>
     <Product>Hafner.Compatibility</Product>
-    <Version>1.0.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyInformationalVersion>1.0.0.0</AssemblyInformationalVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1.0</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.0.1.0</AssemblyInformationalVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
     <Description>
       Defines the third generation of System.Func&lt;T&gt; (with 5 to 16 input typeparameters) and System.Action&lt;T&gt; (with 5 to 16 input typeparameters) for frameworks that do not include them, namely .NET 2.0, .NET 3.0 and .NET 3.5.
@@ -32,7 +32,7 @@
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
     <PackageTags>Hafner.Compatibility.FuncAction Hafner.Compatibility.FuncAction.G3 System.Action System.Func.</PackageTags>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Source files changed to file-scoped namespaces, PackageReadMe.md improved.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

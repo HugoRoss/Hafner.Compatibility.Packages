@@ -17,20 +17,20 @@
     <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Authors>Christoph Hafner</Authors>
+    <Authors>Christoph&#160;Hafner</Authors>
     <Company>Hafner</Company>
     <Product>Hafner.Compatibility</Product>
     <!-- Set <major>.<minor>.<patch> for the package version according to the following logic: -->
     <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
     <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
     <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>3.0.2.0</Version>
+    <Version>3.0.3.0</Version>
     <!-- Set to <major>.<minor>.0.0 of the <Version> element -->
-    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+    <AssemblyVersion>3.0.3.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyInformationalVersion>3.0.2.0</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>3.0.3.0</AssemblyInformationalVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <FileVersion>3.0.2.0</FileVersion>
+    <FileVersion>3.0.3.0</FileVersion>
     <Copyright>Copyright (C) 2022 - 2024 by Christoph Hafner</Copyright>
     <Description>
       Defines the System.Runtime.CompilerServices.ExtensionAttribute for frameworks that do not include it, namely .NET framework 2.0 and 3.0.
@@ -38,7 +38,7 @@
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
     <PackageTags>ExtensionAttribute System.Runtime.CompilerServices.ExtensionAttribute Hafner.Compatibility.ExtensionAttribute</PackageTags>
-    <PackageReleaseNotes>PackageReadMe.md adjusted.</PackageReleaseNotes>
+    <PackageReleaseNotes>"PackageReadMe.md" improved.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
