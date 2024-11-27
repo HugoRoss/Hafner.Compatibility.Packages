@@ -6,7 +6,7 @@ using System;
 /// Indicates that the specified method parameter expects a constant.
 /// </summary>
 [AttributeUsage(AttributeTargets.Parameter, Inherited = false)]
-public class ConstantExpectedAttribute : Attribute {
+public sealed class ConstantExpectedAttribute : Attribute {
 
     /// <summary>
     /// Initializes a new instance of the System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute class.
