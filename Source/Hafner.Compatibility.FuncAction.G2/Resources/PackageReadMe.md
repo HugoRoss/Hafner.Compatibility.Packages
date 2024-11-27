@@ -1,7 +1,5 @@
 # Hafner.Compatibility.FuncAction.G2
 
-<span style="background-color:yellow;color:red">It is recommended to reference `'Hafner.Compatibility.MetaPackage'` instead of referencing this packages directly.</span>
-
 This package provides the following generic delegates of the second generation:
 
 <span style="white-space:nowrap;">
@@ -21,3 +19,5 @@ This package provides the following generic delegates of the second generation:
 </span>
 
 Hint: `System.Action<T1>` is generation 1 and already available since `.NET 2.0`.
+
+It is recommended to reference `Hafner.Compatibility.MetaPackage` instead of referencing this package directly.

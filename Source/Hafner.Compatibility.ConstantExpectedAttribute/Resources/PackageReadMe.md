@@ -6,4 +6,4 @@ This package provides the following attributes:
 |:--------------------------------------------------------------|:------------:|:---:|:---:|:---:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----:|:---:|:-----:|:-----------------:|:---:|:---:|:---:|:---:|:---:|:---:|:-------------:|:---:|:---:|:---:|:---:|:---------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | `System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute`   |      X       |  X  |  X  |  X  |   X   |  X  |   X   |   X   |  X  |   X   |   X   |  X  |   X   |   X   |  X  |   X   |          X        |  X  |  X  |  X  |  X  |  X  |  X  |       X       |  X  |     |     |     |               X             |  X  |  X  |  X  |  X  |  X  |  X  |  X  |  X  |
 
-It is recommended to reference `Hafner.Compatibility.MetaPackage` instead of referencing these packages directly.
+It is recommended to reference `Hafner.Compatibility.MetaPackage` instead of referencing this package directly.

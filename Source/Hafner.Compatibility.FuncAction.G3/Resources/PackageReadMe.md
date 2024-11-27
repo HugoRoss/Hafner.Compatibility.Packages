@@ -1,7 +1,5 @@
 # Hafner.Compatibility.FuncAction.G3
 
-<span style="background-color:yellow;color:red">It is recommended to reference `'Hafner.Compatibility.MetaPackage'` instead of referencing this packages directly.</span>
-
 This package provides the following generic delegates of the third generation:
 
 <span style="white-space:nowrap;">
@@ -34,3 +32,5 @@ This package provides the following generic delegates of the third generation:
 | `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>` |       X       |  X  |  X  |     |       |     |       |       |     |       |       |     |       |       |     |       |                   |     |     |     |     |     |     |               |     |     |     |     |                             |     |     |     |     |     |     |     |     |
 
 </span>
+
+It is recommended to reference `Hafner.Compatibility.MetaPackage` instead of referencing this package directly.
