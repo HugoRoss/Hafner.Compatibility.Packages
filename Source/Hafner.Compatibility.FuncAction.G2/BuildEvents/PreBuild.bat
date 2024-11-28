@@ -18,7 +18,7 @@ IF "%TargetFramework%" EQU "" ECHO:Target framework not specified (arg 2) && EXI
 REM Only do if solution configuration "NuGet" and only once (any framework will do)
 IF /I "%ConfigurationName%|%TargetFramework%" NEQ "NuGet|net20" GOTO EOF
 ECHO Deleting old NuGet packages...
-DEL "bin\NuGet\*.nupkg" /S /Q
+DEL "bin\NuGet\*.nupkg" /S /Q 2>nul
 
 :EOF
 POPD
