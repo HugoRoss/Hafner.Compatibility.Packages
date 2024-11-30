@@ -54,7 +54,7 @@
     <DefineConstants>$(DefineConstants)</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Resources\PackageReadMe.md" />
+    <None Include="Resources\PackageReadMe.md" Pack="true" PackagePath="\resources" Visible="true" />
     <None Include="..\..\BuildTools\Resources\PackageIcon.png" Pack="true" PackagePath="\resources" Visible="false" />
   </ItemGroup>
   <ItemGroup Condition="$(FrameworksLackingGuidAttribute.Contains('|$(TargetFramework)|'))">
