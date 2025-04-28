@@ -10,6 +10,7 @@ namespace System.Diagnostics.CodeAnalysis;
 /// bitwise combination of its member values.
 /// </summary>
 [Flags]
+[SuppressMessage("Usage", "CA2217:Do not mark enums with FlagsAttribute", Justification = $"It is a 'flags'-enumeration! Probably the values of '{nameof(PublicConstructors)}' and '{nameof(All)}' confuse the analyzer.")]
 public enum DynamicallyAccessedMemberTypes {
 
     /// <summary>

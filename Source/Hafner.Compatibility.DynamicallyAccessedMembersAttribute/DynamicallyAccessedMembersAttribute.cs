@@ -3,6 +3,7 @@
 
 namespace System.Diagnostics.CodeAnalysis;
 
+using System;
 using static System.AttributeTargets;
 
 /// <summary>
@@ -13,14 +14,14 @@ using static System.AttributeTargets;
 /// This allows tools to understand which members are being accessed during the execution
 /// of a program.
 ///
-/// This attribute is valid on members whose type is <see cref="Type"/> or <see cref="string"/>.
+/// This attribute is valid on members whose type is <see cref="Type"/> or <see cref="String"/>.
 ///
-/// When this attribute is applied to a location of type <see cref="string"/>, the assumption is
+/// When this attribute is applied to a location of type <see cref="String"/>, the assumption is
 /// that the string represents a fully qualified type name.
 ///
 /// When this attribute is applied to a class, interface, or struct, the members specified
 /// can be accessed dynamically on <see cref="Type"/> instances returned from calling
-/// <see cref="object.GetType"/> on instances of that class, interface, or struct.
+/// <see cref="Object.GetType"/> on instances of that class, interface, or struct.
 ///
 /// If the attribute is applied to a method it's treated as a special case and it implies
 /// the attribute should be applied to the "this" parameter of the method. As such the attribute
