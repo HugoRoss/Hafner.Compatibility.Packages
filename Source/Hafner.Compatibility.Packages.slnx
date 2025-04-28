@@ -1,0 +1,27 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="NuGet" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+    <File Path=".editorconfig" />
+    <File Path="TODO.md" />
+  </Folder>
+  <Project Path="Hafner.Compatibility.ConstantExpectedAttribute/Hafner.Compatibility.ConstantExpectedAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.DynamicallyAccessedMembersAttribute/Hafner.Compatibility.DynamicallyAccessedMembersAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.ExcludeFromCodeCoverageAttribute/Hafner.Compatibility.ExcludeFromCodeCoverageAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.ExperimentalAttribute/Hafner.Compatibility.ExperimentalAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.ExtensionAttribute/Hafner.Compatibility.ExtensionAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.FeatureGuardAttribute/Hafner.Compatibility.FeatureGuardAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.FuncAction.G2/Hafner.Compatibility.FuncAction.G2.csproj" />
+  <Project Path="Hafner.Compatibility.FuncAction.G3/Hafner.Compatibility.FuncAction.G3.csproj" />
+  <Project Path="Hafner.Compatibility.GuidAttribute/Hafner.Compatibility.GuidAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.LoaderOptimizationAttribute/Hafner.Compatibility.LoaderOptimizationAttribute.csproj" />
+  <Project Path="Hafner.Compatibility.NullableReferenceTypeAttributes.G1/Hafner.Compatibility.NullableReferenceTypeAttributes.G1.csproj" />
+  <Project Path="Hafner.Compatibility.NullableReferenceTypeAttributes.G2/Hafner.Compatibility.NullableReferenceTypeAttributes.G2.csproj" />
+  <Project Path="Hafner.Compatibility.NullableReferenceTypeAttributes.G3/Hafner.Compatibility.NullableReferenceTypeAttributes.G3.csproj" />
+  <Project Path="Hafner.Compatibility.Task.Extensions/Hafner.Compatibility.Task.Extensions.csproj" />
+</Solution>
