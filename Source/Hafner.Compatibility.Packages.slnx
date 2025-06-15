@@ -10,12 +10,8 @@
     <File Path=".editorconfig" />
     <File Path="TODO.md" />
   </Folder>
-  <Project Path="Hafner.Compatibility.CallerInformationAttributes.G1/Hafner.Compatibility.CallerInformationAttributes.G1.csproj" Id="064e911b-e728-4077-8444-f71e22306516">
-    <BuildType Solution="NuGet|*" Project="Debug" />
-  </Project>
-  <Project Path="Hafner.Compatibility.CallerInformationAttributes.G2/Hafner.Compatibility.CallerInformationAttributes.G2.csproj">
-    <BuildType Solution="NuGet|*" Project="Debug" />
-  </Project>
+  <Project Path="Hafner.Compatibility.CallerInformationAttributes.G1/Hafner.Compatibility.CallerInformationAttributes.G1.csproj" />
+  <Project Path="Hafner.Compatibility.CallerInformationAttributes.G2/Hafner.Compatibility.CallerInformationAttributes.G2.csproj" />
   <Project Path="Hafner.Compatibility.ConstantExpectedAttribute/Hafner.Compatibility.ConstantExpectedAttribute.csproj" />
   <Project Path="Hafner.Compatibility.DynamicallyAccessedMembersAttribute/Hafner.Compatibility.DynamicallyAccessedMembersAttribute.csproj" />
   <Project Path="Hafner.Compatibility.ExcludeFromCodeCoverageAttribute/Hafner.Compatibility.ExcludeFromCodeCoverageAttribute.csproj" />

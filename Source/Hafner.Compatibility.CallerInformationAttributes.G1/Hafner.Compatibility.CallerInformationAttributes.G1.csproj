@@ -25,19 +25,21 @@
     <!-- 1.2.3.0  =>  1.2.4.0  if no interface changes have been performed (patch, bug-fix) -->
     <!-- 1.2.3.0  =>  1.3.0.0  if new interfaces have been added (feature release) -->
     <!-- 1.2.3.0  =>  2.0.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1.0</Version>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <AssemblyInformationalVersion>1.0.0.0</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>1.0.1.0</AssemblyInformationalVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
-    <FileVersion>1.0.0.0</FileVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
+    <ProductVersion>1.0.1.0</ProductVersion>
+    <PackageReleaseNotes>Package tags improved, ProductVersion tag added.</PackageReleaseNotes>
     <Copyright>Copyright (C) 2025 by Christoph Hafner</Copyright>
     <Description>Defines the first generation of caller information attributes of namespace "System.Runtime.CompilerService" (CallerFilePath, CallerLineNumber and CallerMemberName) for frameworks that do not include them (.NET Framework 2.0 to 4.0.3).</Description>
     <PackageIcon>resources\PackageIcon.png</PackageIcon>
     <PackageReadmeFile>resources\PackageReadMe.md</PackageReadmeFile>
-    <PackageTags>CallerMemberName CallerMemberNameAttribute System.Runtime.CompilerService.CallerMemberName System.Runtime.CompilerService.CallerMemberNameAttribute CallerName CallerLineNumber CallerLineNumberAttribute System.Runtime.CompilerService.CallerLineNumber System.Runtime.CompilerService.CallerLineNumberAttribute LineNumber LineNo CallerFilePath CallerFilePathAttribute System.Runtime.CompilerService.CallerFilePath System.Runtime.CompilerService.CallerFilePathAttribute CallerFile Caller Information Attributes Attribute System.Runtime.CompilerService System.Runtime CompilerService Runtime.CompilerService</PackageTags>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageTags>CallerMemberName CallerMemberNameAttribute System.Runtime.CompilerService.CallerMemberName System.Runtime.CompilerService.CallerMemberNameAttribute CallerName CallerLineNumber CallerLineNumberAttribute System.Runtime.CompilerService.CallerLineNumber System.Runtime.CompilerService.CallerLineNumberAttribute LineNumber LineNo CallerFilePath CallerFilePathAttribute System.Runtime.CompilerService.CallerFilePath System.Runtime.CompilerService.CallerFilePathAttribute CallerFile Caller Information Attributes CallerInformation CallerInfo Attribute System.Runtime.CompilerService System.Runtime CompilerService Runtime.CompilerService</PackageTags>
     <PackageProjectUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HugoRoss/Hafner.Compatibility.Packages.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
