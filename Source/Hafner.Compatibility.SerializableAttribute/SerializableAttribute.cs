@@ -1,6 +1,4 @@
-﻿#pragma warning disable IDE0130 //Namespace does not match folder structure
-
-// Loosely based on https://github.com/microsoft/referencesource/blob/master/mscorlib/system/serializableattribute.cs
+﻿// Loosely based on https://github.com/microsoft/referencesource/blob/master/mscorlib/system/serializableattribute.cs
 
 // ==++==
 // 
@@ -17,12 +15,4 @@ using System.Runtime.InteropServices;
 /// </summary>
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Delegate, Inherited = false)]
 [ComVisible(true)]
-public sealed class SerializableAttribute : Attribute {
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SerializableAttribute"/> class.
-    /// </summary>
-    public SerializableAttribute() {
-    }
-
-}
+public sealed class SerializableAttribute : Attribute;
